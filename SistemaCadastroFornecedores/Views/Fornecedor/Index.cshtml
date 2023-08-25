@@ -1,0 +1,73 @@
+﻿@model List<FornecedorModel>
+
+@{
+    ViewData["Title"] = "Listagem de Fornecedores";
+}
+
+<div class="text-center">
+
+    <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+        <a class="btn btn-primary" role="button" asp-controller="Fornecedor" asp-action="Criar" >Adicionar novo fornecedor</a>
+    </div>
+    <br />
+    <h1 class="display-4">Listagem de Fornecedores</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Id</th>
+                <th scope="col">Nome</th>
+                <th scope="col">CNPJ</th>
+                <th scope="col">Especialidade</th>
+                <th scope="col">CEP</th>
+                <th scope="col">Endereco</th>
+                <th scope="col"></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">1</th>
+                <td>Ayumi</td>
+                <td>04.153.860/0001-16</td>
+                <td>Têxtil</td>
+                <td>03677060</td>
+                <td>Zona Leste favelona</td>
+                <td>
+                    <div class="btn-group" role="group">
+                        <a role="button" class="btn btn-primary" asp-controller="Fornecedor" asp-action="Editar">Editar</a>
+                        <a role="button" class="btn btn-danger" asp-controller="Fornecedor" asp-action="ApagarConfirmacao">Apagar</a>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+                <td>Jacob</td>
+                <td>Thornton</td>
+                <td>fat</td>
+                <td>fat</td>
+                <td>fat</td>
+                <td>
+                    <div class="btn-group" role="group">
+                        <a role="button" class="btn btn-primary" asp-controller="Fornecedor" asp-action="Editar">Editar</a>
+                        <a role="button" class="btn btn-danger" asp-controller="Fornecedor" asp-action="ApagarConfirmacao">Apagar</a>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">3</th>
+                <td>Larry the Bird</td>
+                <td>twitter</td>
+                <td>twitter</td>
+                <td>twitter</td>
+                <td>twitter</td>
+                <td>
+                    <div class="btn-group" role="group">
+                        <a role="button" class="btn btn-primary" asp-controller="Fornecedor" asp-action="Editar">Editar</a>
+                        <a role="button" class="btn btn-danger" asp-controller="Fornecedor" asp-action="ApagarConfirmacao">Apagar</a>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
